@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciencia Section 1</title>
+  <link href="../../dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="cienciasection1">
+    <template v-if="mobile">
+      <section id="cienciasection1-mobile">
+        <div class="w-full h-[285px]">
+          <div class="flex flex-col w-full h-full">
+            <div class="flex flex-col w-full h-full bg-ciencia-bg bg-cover bg-no-repeat">
+            </div>
+            <div
+              class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 absolute left-4 top-[49px] gap-10">
+              <p class="flex-grow-0 flex-shrink-0 w-[125px] text-lg text-left uppercase text-white">
+                Ciencia
+              </p>
+              <p class="flex-grow-0 flex-shrink-0 w-[345px] text-[26px] text-left text-white">
+                Conoce la <span class="line-through">magia</span> ciencia detrás de la tecnología Kaizen Care®
+              </p>
+            </div>
+          </div>
+
+    </template>
+    <template v-else>
+      <section id="cienciasection1-desktop">
+        <div class="w-screen h-[80vh]">
+          <div class="flex flex-col h-full justify-start w-full items-center">
+            <div class="w-full h-full  bg-ciencia-bg bg-cover bg-no-repeat">
+              <div class="flex flex-col justify-start items-start absolute left-[145px] top-[158px] gap-3">
+                <p class="flex-grow-0 flex-shrink-0 text-4xl text-left uppercase text-white">Ciencia</p>
+                <p class="flex-shrink-0 text-6xl text-left text-white">
+                  Conoce la magia ciencia detrás de la tecnología Kaizen Care®
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  </section>
+  </template>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    var { createApp } = Vue;
+
+    const cienciaSection1 = createApp({
+      data() {
+        const mobile = true;
+        return {
+          mobile
+        }
+      },
+      created() {
+        windowWidth = window.innerWidth;
+        if (windowWidth >= 768) {
+          this.mobile = false
+        } else {
+          this.mobile = true
+        }
+        window.addEventListener('resize', this.responsive);
+      },
+      methods: {
+        responsive() {
+          windowWidth = window.innerWidth;
+          if (windowWidth >= 768) {
+            this.mobile = false
+          } else {
+            this.mobile = true
+          }
+        }
+      }
+
+    });
+    cienciaSection1.mount('#cienciasection1');
+  </script>
+
+</body>
+
+</html>
