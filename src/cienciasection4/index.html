@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciencia Section 4</title>
+  <link href="../../dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="cienciasection4">
+    <template v-if="mobile">
+      <section id="cienciasection4-mobile">
+        <div class="flex flex-col justify-start items-center w-full relative gap-10">
+          <div class="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 w-[375px] relative gap-2">
+            <p class="flex-grow-0 flex-shrink-0 text-[15px] text-center uppercase text-[#707070]">
+              NUESTRO TEST
+            </p>
+            <p class="flex-grow-0 flex-shrink-0 text-[26px] text-center uppercase text-black">
+              ESTUDIO DEL TEJIDO KAIZEN
+            </p>
+          </div>
+          <p class="text-center flex-grow-0 flex-shrink-0 text-[22px] text-black">
+            La efectividad antibacterial del tejido de Kaizen está certificado por la IAC
+          </p>
+          <img src="./assets/Kaizen_study_image.png" alt="">
+          <p class="flex-grow-0 flex-shrink-0 text-base text-center text-black">
+            El estudio de efectividad consiste en el análisis del porcentaje de reducción de las siguientes
+            bacterias después de 4 lavados.
+          </p>
+          <div
+            class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-4 px-4">
+            <div class="flex justify-center items-center flex-grow-0 flex-shrink-0 w-[375px] relative gap-10">
+              <p class="flex-grow-0 flex-shrink-0 text-base text-left uppercase text-black">
+                porcentaje de reducción
+              </p>
+              <p class="flex-grow-0 flex-shrink-0 text-base text-right uppercase text-black">Bacterias</p>
+            </div>
+            <div class="flex justify-between items-start self-stretch flex-grow-0 flex-shrink-0 relative">
+              <p class="flex-grow-0 flex-shrink-0 text-base text-center text-black">Escherichia coli</p>
+              <p class="flex-grow-0 flex-shrink-0 text-base text-center text-black">99,9%</p>
+            </div>
+            <svg width="335" height="1" viewBox="0 0 335 1" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="flex-grow-0 flex-shrink-0" preserveAspectRatio="none">
+              <line y1="0.75" x2="335" y2="0.75" stroke="#707070" stroke-width="0.5"></line>
+            </svg>
+            <div class="flex justify-between items-center self-stretch flex-grow-0 flex-shrink-0 relative">
+              <p class="flex-grow-0 flex-shrink-0 text-base text-center text-black">
+                *Staphylococcus aureus
+              </p>
+              <p class="flex-grow-0 flex-shrink-0 text-base text-center text-black">>99,9%</p>
+            </div>
+            <svg width="335" height="1" viewBox="0 0 335 1" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="flex-grow-0 flex-shrink-0" preserveAspectRatio="none">
+              <line y1="0.75" x2="335" y2="0.75" stroke="#707070" stroke-width="0.5"></line>
+            </svg>
+            <div class="flex justify-between items-start self-stretch flex-grow-0 flex-shrink-0 relative">
+              <p class="flex-grow-0 flex-shrink-0 text-base text-center text-black">Candida Albicans</p>
+              <p class="flex-grow-0 flex-shrink-0 text-base text-center text-black">97,8%</p>
+            </div>
+          </div>
+          <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-[#707070]">
+            *Staphylococcus aureus: Bacteria relacionada con el acné
+          </p>
+        </div>
+      </section>
+    </template>
+    <template v-else>
+      <section id="cienciasection4-desktop">
+        <div class="grid grid-flow-col w-full gap-[60px]">
+          <img class="w-screen h-auto place-self-center" src="./assets/Kaizen_study_image.png" alt="">
+          <div class="flex flex-col w-4/5 justify-center items-start flex-grow-0 flex-shrink-0 relative gap-12">
+            <p class="flex-grow-0 flex-shrink-0 text-xl text-left uppercase text-[#707070]">NUESTRO TEST</p>
+            <p class="flex-grow-0 flex-shrink-0 text-[32px] text-left text-black">
+              ESTUDIO DEL TEJIDO KAIZEN
+            </p>
+            <p class="flex-grow-0 flex-shrink-0 text-2xl text-left text-black">
+              La efectividad antibacterial del tejido de Kaizen está certificado por la IAC
+            </p>
+            <p class="flex-grow-0 flex-shrink-0 text-lg text-left text-black">
+              El estudio de efectividad consiste en el análisis del porcentaje de reducción de las
+              siguientes bacterias después de 4 lavados.
+            </p>
+            <div class="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 relative gap-[21px]">
+              <div class="flex justify-start items-center flex-grow-0 flex-shrink-0 w-[335px] relative gap-[62px]">
+                <p class="flex-grow-0 flex-shrink-0 text-lg text-center uppercase text-black">Bacterias</p>
+                <p class="flex-grow-0 flex-shrink-0 text-lg text-center uppercase text-black">
+                  porcentaje de reducción
+                </p>
+              </div>
+              <div class="flex justify-between items-start flex-grow-0 flex-shrink-0 w-[335px] relative">
+                <p class="flex-grow-0 flex-shrink-0 text-lg text-center text-black">Escherichia coli</p>
+                <p class="flex-grow-0 flex-shrink-0 text-lg text-center text-black">99,9%</p>
+              </div>
+              <svg width="335" height="1" viewBox="0 0 335 1" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="flex-grow-0 flex-shrink-0" preserveAspectRatio="none">
+                <line y1="0.75" x2="335" y2="0.75" stroke="#707070" stroke-width="0.5"></line>
+              </svg>
+              <div class="flex justify-between items-center flex-grow-0 flex-shrink-0 w-[335px] relative">
+                <p class="flex-grow-0 flex-shrink-0 text-lg text-center text-black">
+                  *Staphylococcus aureus
+                </p>
+                <p class="flex-grow-0 flex-shrink-0 text-lg text-center text-black">>99,9%</p>
+              </div>
+              <svg width="335" height="1" viewBox="0 0 335 1" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="flex-grow-0 flex-shrink-0" preserveAspectRatio="none">
+                <line y1="0.75" x2="335" y2="0.75" stroke="#707070" stroke-width="0.5"></line>
+              </svg>
+              <div class="flex justify-between items-start flex-grow-0 flex-shrink-0 w-[335px] relative">
+                <p class="flex-grow-0 flex-shrink-0 text-lg text-center text-black">Candida Albicans</p>
+                <p class="flex-grow-0 flex-shrink-0 text-lg text-center text-black">97,8%</p>
+              </div>
+            </div>
+            <p class="flex-grow-0 flex-shrink-0 text-base text-center text-[#707070]">
+              *Staphylococcus aureus: Bacteria relacionada con el acné
+            </p>
+          </div>
+        </div>
+      </section>
+    </template>
+  </div>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <script>
+    var { createApp } = Vue;
+
+    const cienciasection4 = createApp({
+      data() {
+        const mobile = true;
+        return {
+          mobile
+        }
+      },
+      created() {
+        windowWidth = window.innerWidth;
+        if (windowWidth >= 768) {
+          this.mobile = false
+        } else {
+          this.mobile = true
+        }
+        window.addEventListener('resize', this.responsive);
+      },
+      methods: {
+        responsive() {
+          windowWidth = window.innerWidth;
+          if (windowWidth >= 768) {
+            this.mobile = false
+          } else {
+            this.mobile = true
+          }
+        }
+      }
+
+    });
+    cienciasection4.mount('#cienciasection4');
+  </script>
+
+</body>
+
+</html>
