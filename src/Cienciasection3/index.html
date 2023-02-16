@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cienciasection3</title>
+  <link href="../../dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="cienciasection3">
+    <template v-if="mobile">
+      <section id="cienciasection3-mobile">
+        <div class="flex flex-col justify-start items-start w-full relative gap-4 bg-white">
+          <p class="flex-grow-0 flex-shrink-0 text-[22px] text-left uppercase text-black">La solución</p>
+          <p class="flex-grow-0 flex-shrink-0 text-base text-left text-black">
+            Infusionar fibras de seda o bambú en plata está clínicamente probado para eliminar hasta el 99,7
+            % de las bacterias.
+          </p>
+          <div class="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 relative">
+            <img class="" src="./assets/Ciencia_image_04.png" alt="">
+            <p class="absolute text-[26px] top-4 left-8 text-center uppercase text-black">
+              PLATA
+            </p>
+          </div>
+          <p class="flex-grow-0 flex-shrink-0 text-base text-left text-black">
+            <span class="flex-grow-0 flex-shrink-0 text-base text-left text-black">1. La plata contacta con las
+              bacterias</span><br /><span class="flex-grow-0 flex-shrink-0 text-base text-left text-black">2. La plata
+              desprende
+              iones</span><br /><span class="flex-grow-0 flex-shrink-0 text-base text-left text-black">3. Los iones
+              entran
+              en
+              la
+              bacteria</span><br /><span class="flex-grow-0 flex-shrink-0 text-base text-left text-black">4. Reaccionan
+              con
+              las
+              enzimas interiores</span><br /><span class="flex-grow-0 flex-shrink-0 text-base text-left text-black">5.
+              Las
+              enzimas que se conjugan con la plata pierden su funcionalidad</span>
+          </p>
+        </div>
+      </section>
+    </template>
+    <template v-else>
+      <section id="cienciasection3-desktop">
+        <div class="flex flex-col justify-center items-center w-full h-[485px] relative gap-7 bg-white">
+          <p class="flex-grow-0 flex-shrink-0 text-[32px] text-center uppercase text-black">La solución</p>
+          <p class="flex-grow-0 flex-shrink-0 text-lg w-10/12 text-center text-black">
+            Infusionar fibras de seda o bambú en plata está clínicamente probado para eliminar hasta el 99,7
+            % de las bacterias.
+          </p>
+          <div class="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 h-[220px] w-[859px] relative">
+            <div class="flex w-full items-center justify-evenly flex-grow-0 flex-shrink-0 relative">
+              <p
+                class="flex-grow-0 absolute top-0 left-36 flex-shrink-0 text-[32px] text-center uppercase text-black z-50">
+                PLATA</p>
+              <img src="./assets/Ciencia_image_04.png" alt="">
+              <p class=" text-lg text-left text-black w-2/4">
+                <span class="flex-grow-0 flex-shrink-0 text-lg text-left text-black">1. La plata contacta
+                  con las
+                  bacterias</span><br /><span class="flex-grow-0 flex-shrink-0 text-lg text-left text-black">2. La plata
+                  desprende iones</span><br /><span class="flex-grow-0 flex-shrink-0 text-lg text-left text-black">3.
+                  Los
+                  iones
+                  entran en la bacteria</span><br /><span
+                  class="flex-grow-0 flex-shrink-0 text-lg text-left text-black">4.
+                  Reaccionan con las enzimas interiores</span><br /><span
+                  class="flex-grow-0 flex-shrink-0 text-lg text-left text-black">5. Las enzimas que se conjugan con la
+                  plata
+                  pierden su funcionalidad</span>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </template>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <script>
+    var { createApp } = Vue;
+
+    const cienciasection3 = createApp({
+      data() {
+        const mobile = true;
+        return {
+          mobile
+        }
+      },
+      created() {
+        windowWidth = window.innerWidth;
+        if (windowWidth >= 768) {
+          this.mobile = false
+        } else {
+          this.mobile = true
+        }
+        window.addEventListener('resize', this.responsive);
+      },
+      methods: {
+        responsive() {
+          windowWidth = window.innerWidth;
+          if (windowWidth >= 768) {
+            this.mobile = false
+          } else {
+            this.mobile = true
+          }
+        }
+      }
+
+    });
+    cienciasection3.mount('#cienciasection3');
+  </script>
+
+</body>
+
+</html>
