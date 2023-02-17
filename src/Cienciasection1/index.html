@@ -13,16 +13,15 @@
   <div id="cienciasection1">
     <template v-if="mobile">
       <section id="cienciasection1-mobile">
-        <div class="w-full h-[285px]">
+        <div class="w-full h-[30vh]">
           <div class="flex flex-col w-full h-full">
-            <div class="flex flex-col w-full h-full bg-ciencia-bg bg-cover bg-no-repeat">
-            </div>
+            <img class="w-full flex-grow" src="./assets/ciencia_hero_image.png" alt="">
             <div
-              class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 absolute left-4 top-[49px] gap-10">
-              <p class="flex-grow-0 flex-shrink-0 w-[125px] text-lg text-left uppercase text-white">
+              class="flex flex-col justify-start w-full items-start flex-grow-0 flex-shrink-0 absolute left-4 top-0 gap-10">
+              <p class="flex-grow-0 flex-shrink text-3xl text-left uppercase text-white">
                 Ciencia
               </p>
-              <p class="flex-grow-0 flex-shrink-0 w-[345px] text-[26px] text-left text-white">
+              <p class="flex-grow-0 flex-shrink text-3xl text-left text-white">
                 Conoce la <span class="line-through">magia</span> ciencia detrás de la tecnología Kaizen Care®
               </p>
             </div>
@@ -31,20 +30,22 @@
     </template>
     <template v-else>
       <section id="cienciasection1-desktop">
-        <div class="w-screen h-[80vh]">
-          <div class="flex flex-col h-full justify-start w-full items-center">
-            <div class="w-full h-full  bg-ciencia-bg bg-cover bg-no-repeat">
-              <div class="flex flex-col justify-start items-start absolute left-[145px] top-[158px] gap-3">
-                <p class="flex-grow-0 flex-shrink-0 text-4xl text-left uppercase text-white">Ciencia</p>
-                <p class="flex-shrink-0 text-6xl text-left text-white">
-                  Conoce la magia ciencia detrás de la tecnología Kaizen Care®
-              </div>
+        <div class="w-full h-[30vh]">
+          <div class="flex flex-col w-full h-full">
+            <img class="w-full flex-grow" src="./assets/ciencia_hero_image.png" alt="">
+            <div
+              class="flex flex-col justify-end w-full items-start flex-grow-0 flex-shrink absolute left-4 top-18 gap-10">
+              <p class="flex-grow-0 flex-shrink text-6xl text-left uppercase text-white">
+                Ciencia
+              </p>
+              <p class="flex-grow-0 flex-shrink text-6xl text-left text-white">
+                Conoce la <span class="line-through">magia</span> ciencia detrás de la tecnología Kaizen Care®
+              </p>
             </div>
           </div>
         </div>
-  </div>
-  </section>
-  </template>
+      </section>
+    </template>
   </div>
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
