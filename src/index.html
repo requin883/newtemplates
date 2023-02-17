@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciencia Section 7</title>
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="cienciasection7">
+    <template v-if="mobile">
+      <section id="cienciasection7-mobile">
+        <div class="w-full">
+          <div class="flex ml-2 mr-2 flex-col w-full justify-start items-center gap-20">
+            <div class="flex flex-col justify-start items-center flex-grow-0 flex-shrink w-full relative gap-4">
+              <p class="flex-grow-0 flex-shrink text-md text-left text-[#707070]">Estudio 3</p>
+              <p class="flex-grow-0 flex-shrink text-md text-left text-black">
+                Actividad antibacteriana de acción del ion de plata en bacterias
+              </p>
+              <p class="flex-grow-0 flex-shrink text-base text-left text-black">
+                Análisis del mecanismo antibacteriano del ion de plata en en Staphylococcus aureus (bacteria
+                principal causante de acné) y Escherichia coli.
+              </p>
+            </div>
+            <img class="flex-shrink" src="./assets/studies_03_image.png" alt="">
+            <div class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-full relative gap-4">
+              <p class="flex-grow-0 flex-shrink text-base text-left text-black">Conclusión</p>
+              <p class="flex-grow-0 flex-shrink text-base text-left text-black">
+                “La solución de iones de plata generada eléctricamente exhibió una buena eficacia
+                bactericida contra S. aureus y E. coli.”
+              </p>
+              <p class="flex-grow-0 flex-shrink text-xs text-left text-[#707070]">
+                Fuente: Biblioteca Nacional de Medicina. Centro Nacional de Información Biotecnológica
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </template>
+    <template v-else>
+      <section id="cienciasection7-desktop">
+        <div class="flex justify-start items-center">
+          <div class="flex flex-col justify-center items-start flex-grow-0 flex-shrink w-full relative gap-5">
+            <p class="flex-grow-0 flex-shrink text-xl text-left text-[#707070]">Estudio 3</p>
+            <p class="flex-grow-0 flex-shrink text-2xl text-left text-black">
+              Actividad antibacteriana de acción del ion de plata en bacterias
+            </p>
+            <p class="flex-grow-0 flex-shrink text-lg text-left text-black">
+              Análisis del mecanismo antibacteriano del ion de plata en en Staphylococcus aureus (bacteria
+              principal causante de acné) y Escherichia coli.
+            </p>
+            <p class="flex-grow-0 flex-shrink text-lg text-left text-black">Conclusión</p>
+            <p class="flex-grow-0 flex-shrink text-lg text-left text-black">
+              “La solución de iones de plata generada eléctricamente exhibió una buena eficacia bactericida
+              contra S. aureus y E. coli.”
+            </p>
+            <p class="flex-grow-0 flex-shrink text-base text-left text-[#707070]">
+              Fuente: Biblioteca Nacional de Medicina. Centro Nacional de Información Biotecnológica
+            </p>
+          </div>
+          <img class="2/4" src="./assets/studies_03_image.png" alt="">
+        </div>
+      </section>
+    </template>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <script>
+    var { createApp } = Vue;
+
+    const cienciasection7 = createApp({
+      data() {
+        const mobile = true;
+        return {
+          mobile
+        }
+      },
+      created() {
+        windowWidth = window.innerWidth;
+        if (windowWidth >= 768) {
+          this.mobile = false
+        } else {
+          this.mobile = true
+        }
+        window.addEventListener('resize', this.responsive);
+      },
+      methods: {
+        responsive() {
+          windowWidth = window.innerWidth;
+          if (windowWidth >= 768) {
+            this.mobile = false
+          } else {
+            this.mobile = true
+          }
+        }
+      }
+
+    });
+    cienciasection7.mount('#cienciasection7');
+  </script>
+
+</body>
+
+</html>
