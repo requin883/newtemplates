@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciencia Section 5</title>
+  <link href="../../dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="cienciasection5">
+    <template v-if="mobile">
+      <section id="cienciasection5-mobile">
+        <div class="flex flex-col justify-start items-center gap-[61px]">
+          <div class="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 w-full gap-11">
+            <div
+              class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-[7px]">
+              <p class="flex-grow-0 flex-shrink-0 text-[15px] text-center uppercase text-[#707070]">
+                RESPALDADA
+              </p>
+              <p class="flex-grow-0 flex-shrink-0 text-[26px] text-center uppercase text-black">
+                Por estudios
+              </p>
+            </div>
+            <div class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4">
+              <p class="flex-grow-0 flex-shrink-0 text-[15px] text-left text-[#707070]">Estudio 1</p>
+              <p class="flex-grow-0 flex-shrink-0 text-[22px] text-left text-black">
+                Número de bacterias en tu funda de almohada de algodón
+              </p>
+              <p class="flex-grow-0 flex-shrink-0 text-base text-left text-black">
+                Análisis de la acumulación de bacterias en una funda de almohada en diferentes etapas desde
+                el último lavado.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 h-[430px] w-[295px] relative gap-6 p-5 bg-white">
+            <img src="./assets/Pillow_image.png" alt="A pillow">
+            <p class="flex-grow-0 flex-shrink-0 text-lg text-left uppercase text-black">1 Semana después</p>
+          </div>
+          <div class="flex flex-col justify-center items-center flex-grow-0 flex-shrink-0 relative gap-8">
+            <div class="flex-grow-0 flex-shrink-0 w-[335px] h-[3px]">
+              <div class="w-[335px] h-[3px] absolute left-[22.5px] top-[-0.5px] rounded-sm bg-neutral-300"></div>
+              <div class="w-[79px] h-[3px] absolute left-[85.5px] top-[-0.5px] bg-[#ff5c5c]"></div>
+            </div>
+            <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-[#707070]">
+              Fuente: NSF.org y Muestras de gérmenes analizadas en laboratorio
+            </p>
+          </div>
+        </div>
+      </section>
+    </template>
+    <template v-else>
+      <section id="cienciasection5-desktop">
+        <div class="flex flex-col justify-start items-center w-full relative gap-[41px]">
+          <div class="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 relative gap-3">
+            <p class="flex-grow-0 flex-shrink-0 w-[158px] text-xl text-center uppercase text-[#707070]">
+              RESPALDADA
+            </p>
+            <p class="flex-grow-0 flex-shrink-0 w-[345px] text-[32px] text-center uppercase text-black">
+              Por estudios
+            </p>
+          </div>
+          <div class="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 relative gap-4">
+            <p class="flex-grow-0 flex-shrink-0 text-xl text-center text-[#707070]">Estudio 1</p>
+            <p class="flex-grow-0 flex-shrink-0 text-2xl text-center text-black">
+              Número de bacterias en tu funda de almohada de algodón
+            </p>
+            <p class="flex-grow-0 flex-shrink-0 text-lg text-center text-black">
+              Análisis de la acumulación de bacterias en una funda de almohada en diferentes etapas desde el
+              último lavado.
+            </p>
+          </div>
+          <div
+            class="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 h-[470px] w-[280px] relative gap-4 px-[22px] py-[23px] bg-white"
+            style="box-shadow: 0px 4px 4px 0 rgba(0,0,0,0.25);">
+            <img class="h-11/12" src="./assets/Pillow_image.png" alt="">
+            <p class="flex-grow-0 flex-shrink-0 text-[22px] text-left uppercase text-black">
+              1 Semana después
+            </p>
+          </div>
+          <p class="flex-grow-0 flex-shrink-0 text-base text-left text-[#707070]">
+            Fuente: NSF.org y Muestras de gérmenes analizadas en laboratorio
+          </p>
+        </div>
+      </section>
+    </template>
+  </div>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <script>
+    var { createApp } = Vue;
+
+    const cienciasection5section1 = createApp({
+      data() {
+        const mobile = true;
+        return {
+          mobile
+        }
+      },
+      created() {
+        windowWidth = window.innerWidth;
+        if (windowWidth >= 768) {
+          this.mobile = false
+        } else {
+          this.mobile = true
+        }
+        window.addEventListener('resize', this.responsive);
+      },
+      methods: {
+        responsive() {
+          windowWidth = window.innerWidth;
+          if (windowWidth >= 768) {
+            this.mobile = false
+          } else {
+            this.mobile = true
+          }
+        }
+      }
+
+    });
+    cienciasection5section1.mount('#cienciasection5');
+  </script>
+
+</body>
+
+</html>
