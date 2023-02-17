@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.el-change-1 {
+  width: 0;
+  background-color: #FF5C5C;
+}
+
+.el-change-2 {
+  width: 0;
+  background-color: #FFD35C;
+}
+
+.el-change-3 {
+  width: 0;
+  background-color: #8EEB82;
+}
+
+.el-change-4 {
+  width: 0;
+  background-color: #30BF4C;
+}
