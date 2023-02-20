@@ -13,79 +13,54 @@
   <div id="cienciasection2">
     <template v-if="mobile">
       <section id="cienciasection2-mobile">
-        <div class="flex w-[50%] ml-4 flex-col gap-10 text-md">
+        <div class="ml-4">
           <div>
-            <h1 class="uppercase mb-4">El problema</h1>
-            <p>Las células muertas de la piel, el sudor y las cremas se acumulan en tu funda de almohada, lo que permite
+            <h1 class="uppercase mb-4"><b>El problema</b></h1>
+            <p class="mb-10">Las <b> células muertas</b> de la piel, el <b> sudor </b> y
+              las <b>
+                cremas</b> se
+              acumulan en tu <b> funda
+                de almohada</b>,
+              lo que permite
               que las
               bacterias prosperen.</p>
           </div>
-          <div>
-            <div>
-              <p class="uppercase mb-4">2 de ellas:</p>
-              <div class="flex gap-10">
-                <div class="flex flex-col gap-2 text-xs w-[50px]">
-                  <p>STAPHYLOCOCCUS AUREUS</p>
-                  <p>CUTIBACTERIUM ACNES</p>
-                </div>
-                <img class="w-[75px]" src="./assets/1updated.png" alt="">
-              </div>
-            </div>
-            <div>
-              <p class="uppercase text-md flex-shrink my-2">Principales causantes de:</p>
-              <div class="flex gap-4">
-                <img class="w-[75px]" src="./assets/2updated.png" alt="">
-                <div class="flex flex-col text-xs w-[50px]">
-                  <p>ACNÉ VULGAR</p>
-                  <p>ESPINILLAS</p>
-                </div>
-              </div>
-            </div>
+          <div class="mb-2">
+            <p class="uppercase mb-6">2 de ellas:</p>
+            <img class="ml-4" src="./assets/Group 163.png" alt="">
           </div>
-          <p>Al unirse con el sebo de tu piel obstruyen los poros generando imperfecciones.</p>
+          <div class="my-4">
+            <p class="uppercase mb-6">Principales causantes de:</p>
+            <img src="./assets/Group 162.png" alt="">
+          </div>
+          <p>Al unirse con el sebo de tu piel <b> obstruyen los poros</b> generando <b>imperfecciones</b>.</p>
         </div>
       </section>
     </template>
     <template v-else>
       <section id="cienciasection2-desktop">
-        <div class="w-full grid grid-flow-row place-items-center">
-          <div class="w-[50%]">
-            <div>
-              <h1 class="uppercase">El problema</h1>
-              <p>Las células muertas de la piel, el sudor y las cremas se acumulan en tu funda de almohada, lo que
-                permite
-                que las
-                bacterias prosperen.</p>
-            </div>
-            <div class="w-[500px]">
-              <div class="w-full grid grid-flow-col">
-                <p class="self-start">2 de ellas:</p>
-                <p class="self-end">Principales causantes de:</p>
-              </div>
-              <div class="w-full justify-evenly place-items-center text-sm grid grid-flow-col w-[500px]">
-                <div class="grid grid-flow-col">
-                  <div class="grid w-[100px] grid-flow-row">
-                    <p>STAPHYLOCOCCUS AUREUS</p>
-                    <p>CUTIBACTERIUM ACNES</p>
-                  </div>
-                  <div class="w-[100px]">
-                    <img class="" src="./assets/1updated.png" alt="">
-                  </div>
-                </div>
-                <span class="w-0.5 h-[15vh] bg-black"></span>
-                <div class="grid text-sm  grid-flow-col">
-                  <img class="w-[100px]" src="./assets/2updated.png" alt="">
-                  <div class="grid grid-flow-row w-[100px] mt-2">
-                    <p>ACNÉ VULGAR</p>
-                    <p>ESPINILLAS</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <p>Al unirse con el sebo de tu piel obstruyen los poros generando imperfecciones.</p>
-            </div>
+        <div class="grid w-full grid-flow-row place-items-center">
+          <div class="text-center w-[60%] mb-10">
+            <h1 class="uppercase font-bold text-4xl mb-4">El problema</h1>
+            <p>Las células <b>muertas de la piel</b>, el <b>sudor</b> y las <b>cremas</b> se
+              acumulan en
+              tu <b>funda
+                de
+                almohada</b>, lo que permite
+              que las
+              bacterias prosperen.</p>
           </div>
+          <div class="uppercase font-bold grid grid-flow-col place-items-center gap-14 mb-10">
+            <p>2 de ellas:</p>
+            <p class="ml-20">Principales <br>causantes de:</p>
+          </div>
+          <div class="grid grid-flow-col gap-10 mb-20">
+            <img src="./assets/Group 189.png" alt="">
+            <span class="w-0.5 h-[20vh] bg-[#707070]"></span>
+            <img src="./assets/Group 188.png" alt="">
+          </div>
+          <p class="text-center">Al unirse con el sebo de tu piel <b>obstruyen los poros</b> generando <b> <br>
+              imperfecciones</b>.</p>
         </div>
       </section>
     </template>
