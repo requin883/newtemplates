@@ -13,11 +13,42 @@
 
   <div id="aboutussection3">
     <template v-if="mobile">
-      <section id="aboutussection3-mobile"></section>
+      <section id="aboutussection3-mobile">
+        <div class="flex flex-col justify-start items-start w-full gap-5">
+          <div
+            class="flex flex-col justify-center items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-5 px-4">
+            <p class="flex-grow-0 flex-shrink-0 text-lg text-left text-black">Creemos:</p>
+            <p class="flex-grow-0 flex-shrink-0 text-2xl text-left text-black">
+              Que la búsqueda de la mejora constante nace del amor propio y no desde la perfección.
+            </p>
+            <p class="flex-grow-0 flex-shrink-0 text-base text-left text-black">
+              <span class="flex-grow-0 flex-shrink-0 text-base text-left text-black">No buscamos una piel perfecta.
+              </span><br /><span class="flex-grow-0 flex-shrink-0 text-base text-left text-black">Buscamos la mejor
+                versión de
+                una piel real.</span>
+            </p>
+          </div>
+          <img src="./assets/about_image_02.png" alt="">
+        </div>
+      </section>
     </template>
     <template v-else>
-      <section id="aboutussection3-desktop"></section>
-    </template>
+      <section id="aboutussection3-desktop">
+        <div class="flex justify-start items-center w-full gap-[100px]">
+          <div class="flex flex-col justify-center items-start flex-grow relative gap-4">
+            <p class="flex-grow-0 flex-shrink text-2xl text-left text-black">Creemos:</p>
+            <p class="flex-grow-0 flex-shrink text-[32px] text-left text-black">
+              Que la búsqueda de la mejora constante nace del amor propio y no desde la perfección.
+            </p>
+            <p class="flex-grow-0 flex-shrink text-base text-left text-black">
+              No buscamos una piel perfecta. Buscamos la mejor versión de una piel real.
+            </p>
+          </div>
+          <img src="./assets/creemos_image.png" alt="">
+        </div>
+  </div>
+  </section>
+  </template>
   </div>
 
 

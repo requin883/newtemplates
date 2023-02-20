@@ -512,3 +512,156 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.relative {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-\[370px\] {
+  height: 370px;
+}
+
+.h-\[126px\] {
+  height: 126px;
+}
+
+.h-\[550px\] {
+  height: 550px;
+}
+
+.w-\[375px\] {
+  width: 375px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-\[1200px\] {
+  width: 1200px;
+}
+
+.w-\[550px\] {
+  width: 550px;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-shrink {
+  flex-shrink: 1;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.resize {
+  resize: both;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-2\.5 {
+  gap: 0.625rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-\[100px\] {
+  gap: 100px;
+}
+
+.self-stretch {
+  align-self: stretch;
+}
+
+.bg-\[url\(\&\#x27\;about_image_02\.png\&\#x27\;\)\] {
+  background-image: url(&#x27;about_image_02.png&#x27;);
+}
+
+.bg-\[url\(\&\#x27\;creemos_image\.png\&\#x27\;\)\] {
+  background-image: url(&#x27;creemos_image.png&#x27;);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-\[32px\] {
+  font-size: 32px;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
