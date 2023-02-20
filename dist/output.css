@@ -512,3 +512,176 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.relative {
+  position: relative;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.h-\[23px\] {
+  height: 23px;
+}
+
+.h-\[370px\] {
+  height: 370px;
+}
+
+.h-\[349px\] {
+  height: 349px;
+}
+
+.h-\[550px\] {
+  height: 550px;
+}
+
+.w-\[335px\] {
+  width: 335px;
+}
+
+.w-\[375px\] {
+  width: 375px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
+.w-\[550px\] {
+  width: 550px;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-shrink {
+  flex-shrink: 1;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
+.resize {
+  resize: both;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.place-items-center {
+  place-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-2\.5 {
+  gap: 0.625rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-\[113px\] {
+  gap: 113px;
+}
+
+.bg-\[url\(\&\#x27\;about_image_03\.png\&\#x27\;\)\] {
+  background-image: url(&#x27;about_image_03.png&#x27;);
+}
+
+.bg-\[url\(\&\#x27\;info_image\.png\&\#x27\;\)\] {
+  background-image: url(&#x27;info_image.png&#x27;);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
