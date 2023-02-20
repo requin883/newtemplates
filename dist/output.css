@@ -518,76 +518,45 @@ video {
   margin-bottom: 1rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mb-10 {
   margin-bottom: 2.5rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
-.ml-20 {
-  margin-left: 5rem;
 }
 
 .mb-20 {
   margin-bottom: 5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.ml-20 {
+  margin-left: 5rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .grid {
   display: grid;
 }
 
-.h-\[15vh\] {
-  height: 15vh;
-}
-
-.h-\[\] {
-  height: ;
-}
-
 .h-\[20vh\] {
   height: 20vh;
-}
-
-.h-\[2vh\] {
-  height: 2vh;
-}
-
-.h-\[25vh\] {
-  height: 25vh;
-}
-
-.h-\[30vh\] {
-  height: 30vh;
-}
-
-.h-\[29vh\] {
-  height: 29vh;
 }
 
 .w-0 {
@@ -598,32 +567,12 @@ video {
   width: 0.125rem;
 }
 
-.w-\[100px\] {
-  width: 100px;
-}
-
-.w-\[50\%\] {
-  width: 50%;
-}
-
-.w-\[500px\] {
-  width: 500px;
+.w-\[60\%\] {
+  width: 60%;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-\[30\%\] {
-  width: 30%;
-}
-
-.w-\[40\%\] {
-  width: 40%;
-}
-
-.w-\[60\%\] {
-  width: 60%;
 }
 
 .resize {
@@ -642,49 +591,12 @@ video {
   place-items: center;
 }
 
-.justify-evenly {
-  justify-content: space-evenly;
-}
-
 .gap-10 {
   gap: 2.5rem;
 }
 
 .gap-14 {
   gap: 3.5rem;
-}
-
-.gap-20 {
-  gap: 5rem;
-}
-
-.self-start {
-  align-self: flex-start;
-}
-
-.self-end {
-  align-self: flex-end;
-}
-
-.self-center {
-  align-self: center;
-}
-
-.justify-self-center {
-  justify-self: center;
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-\[\#\#707070\] {
-  background-color: ##707070;
 }
 
 .bg-\[\#707070\] {
@@ -694,21 +606,6 @@ video {
 
 .text-center {
   text-align: center;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
 }
 
 .text-4xl {
