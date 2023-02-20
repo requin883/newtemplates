@@ -13,39 +13,43 @@
   <div id="cienciasection2">
     <template v-if="mobile">
       <section id="cienciasection2-mobile">
-        <div class="w-full ml-2 grid grid-flow-row gap-10">
-          <div class="grid grid-flow-row gap-6 w-[500px] h-[300px]">
-            <p class="uppercase">El problema</p>
+        <div class="flex w-[50%] ml-4 flex-col gap-10 text-md">
+          <div>
+            <h1 class="uppercase mb-4">El problema</h1>
             <p>Las células muertas de la piel, el sudor y las cremas se acumulan en tu funda de almohada, lo que permite
               que las
               bacterias prosperen.</p>
-            <p class="uppercase">2 de ellas:</p>
           </div>
-          <div class="w-[1000px]">
-            <div class="grid grid-flow-col w-full">
-              <div class="grid grid-flow-row text-xs">
-                <p>STAPHYLOCOCCUS AUREUS</p>
-                <p>CUTIBACTERIUM ACNES</p>
+          <div>
+            <div>
+              <p class="uppercase mb-4">2 de ellas:</p>
+              <div class="flex gap-10">
+                <div class="flex flex-col gap-2 text-xs w-[50px]">
+                  <p>STAPHYLOCOCCUS AUREUS</p>
+                  <p>CUTIBACTERIUM ACNES</p>
+                </div>
+                <img class="w-[75px]" src="./assets/1updated.png" alt="">
               </div>
-              <img class="w-[250px]" src="./assets/1updated.png" alt="">
             </div>
-            <p class="uppercase">Principales causantes de:</p>
-            <div class="grid grid-flow-col w-[100px]">
-              <div class="grid grid-flow-row text-xs order-2">
-                <p>ACNÉ VULGAR</p>
-                <p>ESPINILLAS</p>
+            <div>
+              <p class="uppercase text-md flex-shrink my-2">Principales causantes de:</p>
+              <div class="flex gap-4">
+                <img class="w-[75px]" src="./assets/2updated.png" alt="">
+                <div class="flex flex-col text-xs w-[50px]">
+                  <p>ACNÉ VULGAR</p>
+                  <p>ESPINILLAS</p>
+                </div>
               </div>
-              <img class="order-1 w-[250px]" src="./assets/2updated.png" alt="">
             </div>
           </div>
-          <p class="w-[50vw]">Al unirse con el sebo de tu piel obstruyen los poros generando imperfecciones.</p>
+          <p>Al unirse con el sebo de tu piel obstruyen los poros generando imperfecciones.</p>
         </div>
       </section>
     </template>
     <template v-else>
       <section id="cienciasection2-desktop">
-        <section id="cienciasection2-mobile">
-          <div class="w-full grid grid-flow-row place-items-center gap-4">
+        <div class="w-full grid grid-flow-row place-items-center">
+          <div class="w-[50%]">
             <div>
               <h1 class="uppercase">El problema</h1>
               <p>Las células muertas de la piel, el sudor y las cremas se acumulan en tu funda de almohada, lo que
@@ -53,26 +57,28 @@
                 que las
                 bacterias prosperen.</p>
             </div>
-            <div class="w-full grid grid-flow-col justify-evenly">
-              <p>2 de ellas:</p>
-              <p>Principales causantes de:</p>
-            </div>
-            <div class="w-full justify-evenly items-center text-sm grid grid-flow-col w-[500px] gap-4">
-              <div class="grid grid-flow-col">
-                <div class="grid grid-flow-row">
-                  <p>STAPHYLOCOCCUS AUREUS</p>
-                  <p>CUTIBACTERIUM ACNES</p>
-                </div>
-                <div class="w-[50px]">
-                  <img class="" src="./assets/1updated.png" alt="">
-                </div>
+            <div class="w-[500px]">
+              <div class="w-full grid grid-flow-col">
+                <p class="self-start">2 de ellas:</p>
+                <p class="self-end">Principales causantes de:</p>
               </div>
-              <span class="w-0.5 h-[18vh] bg-black"></span>
-              <div class="grid text-sm grid-flow-col">
-                <img class="w-[50px]" src="./assets/2updated.png" alt="">
-                <div class="grid grid-flow-row mt-2">
-                  <p>ACNÉ VULGAR</p>
-                  <p>ESPINILLAS</p>
+              <div class="w-full justify-evenly place-items-center text-sm grid grid-flow-col w-[500px]">
+                <div class="grid grid-flow-col">
+                  <div class="grid w-[100px] grid-flow-row">
+                    <p>STAPHYLOCOCCUS AUREUS</p>
+                    <p>CUTIBACTERIUM ACNES</p>
+                  </div>
+                  <div class="w-[100px]">
+                    <img class="" src="./assets/1updated.png" alt="">
+                  </div>
+                </div>
+                <span class="w-0.5 h-[15vh] bg-black"></span>
+                <div class="grid text-sm  grid-flow-col">
+                  <img class="w-[100px]" src="./assets/2updated.png" alt="">
+                  <div class="grid grid-flow-row w-[100px] mt-2">
+                    <p>ACNÉ VULGAR</p>
+                    <p>ESPINILLAS</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -80,9 +86,9 @@
               <p>Al unirse con el sebo de tu piel obstruyen los poros generando imperfecciones.</p>
             </div>
           </div>
-  </div>
-  </section>
-  </template>
+        </div>
+      </section>
+    </template>
   </div>
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
