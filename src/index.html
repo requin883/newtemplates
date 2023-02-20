@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Section 2</title>
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="aboutussection2">
+    <template v-if="mobile">
+      <section id="aboutussection1-mobile">
+        <div class="flex flex-col justify-start items-start w-full relative gap-5 px-4 py-6 bg-white">
+          <p class="flex-grow-0 flex-shrink-0 text-2xl text-left text-black">
+            Nos encanta traspasar los límites de lo que es posible.
+          </p>
+          <p class="flex-grow-0 flex-shrink-0 text-base text-left text-black">
+            <span class="flex-grow-0 flex-shrink-0 text-base text-left text-black">Y buscar la mejora continua de
+              nuestros
+              productos. </span><br /><span
+              class="flex-grow-0 flex-shrink-0 text-base text-left text-black">Confeccionando
+              innovación y calidad. Respaldada por la ciencia.</span>
+          </p>
+        </div>
+      </section>
+    </template>
+    <template v-else>
+      <section id="aboutussection1-desktop">
+        <div class="flex justify-center items-center w-full gap-[130px] px-[220px] bg-white">
+          <div class="flex justify-center items-center self-stretch flex-grow relative gap-[130px]">
+            <p class="flex-grow-0 flex-shrink text-[32px] text-left text-black">
+              Nos encanta traspasar los límites de lo que es posible.
+            </p>
+            <p class="flex-grow-0 flex-shrink text-lg text-left text-black">
+              <span class="flex-grow-0 flex-shrink text-lg text-left text-black">Y buscar la mejora continua de
+                nuestros
+                productos. </span><br /><span
+                class="flex-grow-0 flex-shrink text-lg text-left text-black">Confeccionando
+                innovación y calidad. Respaldada por la ciencia.</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </template>
+  </div>
+
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <script>
+    var { createApp } = Vue;
+
+    const aboutUsSection2 = createApp({
+      data() {
+        const mobile = true;
+        return {
+          mobile
+        }
+      },
+      created() {
+        windowWidth = window.innerWidth;
+        if (windowWidth >= 768) {
+          this.mobile = false
+        } else {
+          this.mobile = true
+        }
+        window.addEventListener('resize', this.responsive);
+      },
+      methods: {
+        responsive() {
+          windowWidth = window.innerWidth;
+          if (windowWidth >= 768) {
+            this.mobile = false
+          } else {
+            this.mobile = true
+          }
+        }
+      }
+
+    });
+    aboutUsSection2.mount('#aboutussection2');
+  </script>
+
+</body>
+
+</html>
