@@ -512,3 +512,181 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.relative {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-\[345px\] {
+  height: 345px;
+}
+
+.h-\[550px\] {
+  height: 550px;
+}
+
+.h-\[747px\] {
+  height: 747px;
+}
+
+.w-\[345px\] {
+  width: 345px;
+}
+
+.w-\[38px\] {
+  width: 38px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.w-\[550px\] {
+  width: 550px;
+}
+
+.w-\[595px\] {
+  width: 595px;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-shrink {
+  flex-shrink: 1;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
+.resize {
+  resize: both;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-2\.5 {
+  gap: 0.625rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-7 {
+  gap: 1.75rem;
+}
+
+.self-stretch {
+  align-self: stretch;
+}
+
+.bg-\[url\(\&\#x27\;about_image_04\.png\&\#x27\;\)\] {
+  background-image: url(&#x27;about_image_04.png&#x27;);
+}
+
+.bg-\[url\(\&\#x27\;reviews_image\.png\&\#x27\;\)\] {
+  background-image: url(&#x27;reviews_image.png&#x27;);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-\[22px\] {
+  font-size: 22px;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-\[\#707070\] {
+  --tw-text-opacity: 1;
+  color: rgb(112 112 112 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
