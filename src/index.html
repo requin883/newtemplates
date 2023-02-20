@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Section 1</title>
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="aboutussection1">
+    <template v-if="mobile">
+      <section id="aboutussection1-mobile">
+        <div class="flex flex-col justify-start items-start w-full relative">
+          <img src="./assets/about_image_01.png" alt="">
+          <div
+            class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 absolute left-0 top-[2rem] gap-14 px-4">
+            <div class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4">
+              <p class="flex-grow-0 flex-shrink text-2xl text-left text-white">Nuestra historia</p>
+              <p class="flex-grow-0 flex-shrink text-3xl w-full text-left text-white">
+                Detras de Kai (cambio) <br>y Zen (mejor)
+              </p>
+            </div>
+            <p class="flex-grow-0 flex-shrink text-base text-left text-white">
+              Filosofía de vida japonesa basada en la búsqueda <br>diaria de nuevas oportunidades para mejorar
+            </p>
+          </div>
+        </div>
+      </section>
+    </template>
+    <template v-else>
+      <section id="aboutussection1-desktop">
+        <div class="flex flex-col justify-start w-full items-center relative">
+          <img src="./assets/frame-55.png" alt="">
+          <div
+            class="flex flex-col justify-start items-start flex-grow-0 flex-shrink w-[60%] absolute left-[115px] top-[1rem] gap-3">
+            <p class="flex-grow-0 flex-shrink text-[32px] text-left text-white">Nuestra historia</p>
+            <p class="flex-grow-0 flex-shrink lg:text-[52px] md:text-[40px] text-left text-white">
+              Detrás de Kai (cambio) y Zen (mejor)
+            </p>
+            <p class="flex-grow-0 flex-shrink text-2xl text-left text-white">
+              Filosofía de vida japonesa basada en la búsqueda diaria de nuevas oportunidades para mejorar
+            </p>
+          </div>
+        </div>
+      </section>
+    </template>
+  </div>
+
+
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <script>
+    var { createApp } = Vue;
+
+    const aboutUsSection1 = createApp({
+      data() {
+        const mobile = true;
+        return {
+          mobile
+        }
+      },
+      created() {
+        windowWidth = window.innerWidth;
+        if (windowWidth >= 768) {
+          this.mobile = false
+        } else {
+          this.mobile = true
+        }
+        window.addEventListener('resize', this.responsive);
+      },
+      methods: {
+        responsive() {
+          windowWidth = window.innerWidth;
+          if (windowWidth >= 768) {
+            this.mobile = false
+          } else {
+            this.mobile = true
+          }
+        }
+      }
+
+    });
+    aboutUsSection1.mount('#aboutussection1');
+  </script>
+
+</body>
+
+</html>
