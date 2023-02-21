@@ -14,17 +14,16 @@
   <div id="aboutussection1">
     <template v-if="mobile">
       <section id="aboutussection1-mobile">
-        <div class="flex flex-col justify-start items-start w-full relative">
-          <img src="./assets/about_image_01.png" alt="">
-          <div
-            class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 absolute left-0 top-[2rem] gap-14 px-4">
-            <div class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4">
-              <p class="flex-grow-0 flex-shrink text-2xl text-left text-white">Nuestra historia</p>
-              <p class="flex-grow-0 flex-shrink text-3xl w-full text-left text-white">
+        <div class="flex flex-col justify-center items-center w-full relative">
+          <img class="w-full" src="./assets/about_image_01.png" alt="">
+          <div class="grid grid-flow-row place-items-center w-full absolute left-[0] top-[4rem] gap-4 px-4">
+            <div class="flex flex-col justify-center items-center self-stretch flex-grow-0 flex-shrink-0 relative">
+              <p class="flex-grow-0 flex-shrink text-lg font-bold text-center text-white">Nuestra historia</p>
+              <p class="flex-grow-0 font-bold flex-shrink text-3xl w-full text-center text-white">
                 Detras de Kai (cambio) <br>y Zen (mejor)
               </p>
             </div>
-            <p class="flex-grow-0 flex-shrink text-base text-left text-white">
+            <p class="flex-grow-0 flex-shrink font-bold text-sm text-center text-white mt-2">
               Filosofía de vida japonesa basada en la búsqueda <br>diaria de nuevas oportunidades para mejorar
             </p>
           </div>
@@ -33,15 +32,15 @@
     </template>
     <template v-else>
       <section id="aboutussection1-desktop">
-        <div class="flex flex-col justify-start w-full items-center relative">
-          <img src="./assets/frame-55.png" alt="">
+        <div class="grid grid-flow-row w-full place-items-center font-bold relative">
+          <img class="w-full" src="./assets/frame-55.png" alt="">
           <div
-            class="flex flex-col justify-start items-start flex-grow-0 flex-shrink w-[60%] absolute left-[115px] top-[1rem] gap-3">
-            <p class="flex-grow-0 flex-shrink text-[32px] text-left text-white">Nuestra historia</p>
-            <p class="flex-grow-0 flex-shrink lg:text-[52px] md:text-[40px] text-left text-white">
+            class="flex flex-col justify-start items-start flex-grow-0 flex-shrink w-full absolute left-[3rem] top-[4rem] lg:left-[10%] lg:top-[40%] gap-3 lg:gap-6">
+            <p class="flex-grow-0 flex-shrink text-xl lg:text-2xl text-left text-white">Nuestra historia</p>
+            <p class="flex-grow-0 flex-shrink lg:text-4xl md:text-[40px] text-left text-white">
               Detrás de Kai (cambio) y Zen (mejor)
             </p>
-            <p class="flex-grow-0 flex-shrink text-2xl text-left text-white">
+            <p class="flex-grow-0 flex-shrink text-base lg:text-md w-[45%] lg:w-[30%] text-left text-white">
               Filosofía de vida japonesa basada en la búsqueda diaria de nuevas oportunidades para mejorar
             </p>
           </div>
@@ -49,8 +48,6 @@
       </section>
     </template>
   </div>
-
-
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
