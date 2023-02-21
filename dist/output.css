@@ -517,60 +517,68 @@ video {
   position: relative;
 }
 
+.mr-4 {
+  margin-right: 1rem;
+}
+
 .flex {
   display: flex;
 }
 
-.h-\[370px\] {
-  height: 370px;
-}
-
-.h-\[126px\] {
-  height: 126px;
-}
-
-.h-\[550px\] {
-  height: 550px;
-}
-
-.w-\[375px\] {
-  width: 375px;
+.grid {
+  display: grid;
 }
 
 .w-full {
   width: 100%;
 }
 
-.w-\[1200px\] {
-  width: 1200px;
+.w-\[50\%\] {
+  width: 50%;
 }
 
-.w-\[550px\] {
-  width: 550px;
+.w-\[100\%\] {
+  width: 100%;
 }
 
-.flex-shrink-0 {
-  flex-shrink: 0;
+.w-\[501\%\] {
+  width: 501%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
 }
 
 .flex-shrink {
   flex-shrink: 1;
 }
 
-.flex-grow-0 {
-  flex-grow: 0;
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
 
 .flex-grow {
   flex-grow: 1;
 }
 
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
 .resize {
   resize: both;
 }
 
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.place-items-center {
+  place-items: center;
 }
 
 .items-start {
@@ -589,48 +597,24 @@ video {
   justify-content: center;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.gap-2\.5 {
-  gap: 0.625rem;
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-5 {
   gap: 1.25rem;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
 .gap-\[100px\] {
   gap: 100px;
 }
 
+.gap-\[2rem\] {
+  gap: 2rem;
+}
+
 .self-stretch {
   align-self: stretch;
-}
-
-.bg-\[url\(\&\#x27\;about_image_02\.png\&\#x27\;\)\] {
-  background-image: url(&#x27;about_image_02.png&#x27;);
-}
-
-.bg-\[url\(\&\#x27\;creemos_image\.png\&\#x27\;\)\] {
-  background-image: url(&#x27;creemos_image.png&#x27;);
-}
-
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-center {
-  background-position: center;
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
 }
 
 .px-4 {
@@ -647,6 +631,10 @@ video {
   line-height: 2rem;
 }
 
+.text-\[32px\] {
+  font-size: 32px;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -655,10 +643,6 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-\[32px\] {
-  font-size: 32px;
 }
 
 .text-black {
